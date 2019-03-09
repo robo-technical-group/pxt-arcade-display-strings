@@ -1,17 +1,17 @@
 {
     "name": "pxt-arcade-display-strings",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "",
     "dependencies": {
         "device": "*"
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "displayStrings.ts"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": false,
-    "additionalFilePaths": []
+    "public": false
 }
