@@ -4,7 +4,7 @@ Extension for displaying strings on an image.
 
 ## TODO
 
-- [X] See it in action at https://makecode.com/_KdobepMJgdE3
+- [X] See it in action at https://makecode.com/_ddw0PJdYbC3A
 - [ ] Add "icon.png" image (300x200) in the root folder
 - [ ] Add "- beta" to the GitHub project description if you are still iterating it.
 - [ ] Turn on your automated build on https://travis-ci.org
