@@ -21,7 +21,7 @@ let fonts: FontName[] = [
     FontName.Font8,
     FontName.Font8];
 
-for (let size: number = 1; size <= 3; size++) {
+for (let size: number = 1; size <= 4; size++) {
     background = image.create(scene.screenWidth(), scene.screenHeight());
     let y: number = 0;
     for (let index = 0; index <= strings.length - 1; index++) {
@@ -33,7 +33,7 @@ for (let size: number = 1; size <= 3; size++) {
     loops.pause(pauseTime);
 }   // for ( size )
 
-for (let size: number = 1; size <= 3; size++) {
+for (let size: number = 1; size <= 4; size++) {
     background = image.create(scene.screenWidth(), scene.screenHeight());
     let y: number = 0;
     for (let index = 0; index <= strings.length - 1; index++) {
@@ -44,3 +44,39 @@ for (let size: number = 1; size <= 3; size++) {
     scene.setBackgroundImage(background);
     loops.pause(pauseTime);
 }   // for ( size )
+
+let strings_f5: string[] = [
+    "Font5",
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "abcdefghijklmnopqrstuvwxyz",
+    "0123456789"
+];
+let strings_f8: string[] = [
+    "Font8",
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "abcdefghijklmnopqrstuvwxyz",
+    "0123456789"
+];
+
+for (let size: number = 1; size <= 4; size++) {
+    background = image.create(scene.screenWidth(), scene.screenHeight());
+    let y: number = 0;
+    let f: FontInfo = drawStrings.createFontInfo(FontName.Font5, size);
+    drawStrings.writeMultiple(strings_f5, background, 0, 0, size * 2, f);
+    f = drawStrings.createFontInfo(FontName.Font8, size);
+    drawStrings.writeMultiple(strings_f8, background, 0, 30 * size, size * 2 + 1, f);
+    scene.setBackgroundImage(background);
+    loops.pause(pauseTime);
+}   // for ( size )
+
+for (let size: number = 1; size <= 4; size++) {
+    background = image.create(scene.screenWidth(), scene.screenHeight());
+    let y: number = 0;
+    let f: FontInfo = drawStrings.createFontInfo(FontName.Font5, size);
+    drawStrings.writeMultipleCenter(strings_f5, background, 0, size * 2, f);
+    f = drawStrings.createFontInfo(FontName.Font8, size);
+    drawStrings.writeMultipleCenter(strings_f8, background, 30 * size, size * 2 + 1, f);
+    scene.setBackgroundImage(background);
+    loops.pause(pauseTime);
+}   // for ( size )
+

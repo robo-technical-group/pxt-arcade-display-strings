@@ -170,4 +170,46 @@ namespace drawStrings {
         }   // if (!fi)
         img.printCenter(text, y, color, fi.font);
     }   // writeCenter()
+
+    /**
+     * Draw an array of strings on the given image.
+     */
+    //% blockId=drawstring_write_multi
+    //% block="write strings %text on image %img=screen_image_picker at x %x y %y with color %color=colorindexpicker in font %font || with spacing %spacing"
+    //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1
+    export function writeMultiple(text: string[], img: Image,
+        x: number, y: number, color: color, fi: FontInfo,
+        spacing: number = 1)
+        : void {
+        if (!fi) {
+            fi = createFontInfo(DEFAULT_FONT);
+        }   // if (!fi)
+
+        let currY: number = y;
+        for (let t of text) {
+            img.print(t, x, currY, color, fi.font);
+            currY += (fi.height + spacing);
+        }   // for ( t )
+    }   // writeMultiple()
+
+    /**
+     * Draw an array of strings on the given image centered horizontally.
+     */
+    //% blockId=drawstring_write_multi_center
+    //% block="write strings %text centered on image %img=screen_image_picker at y %y with color %color=colorindexpicker in font %font || with spacing %spacing"
+    //% text.defl="Hello!" y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1
+    export function writeMultipleCenter(text: string[], img: Image,
+        y: number, color: color, fi: FontInfo,
+        spacing: number = 1)
+        : void {
+        if (!fi) {
+            fi = createFontInfo(DEFAULT_FONT);
+        }   // if (!fi)
+
+        let currY: number = y;
+        for (let t of text) {
+            img.printCenter(t, currY, color, fi.font);
+            currY += (fi.height + spacing);
+        }   // for ( t )
+    }   // writeMultipleCenter()
 }   // namespace drawStrings
