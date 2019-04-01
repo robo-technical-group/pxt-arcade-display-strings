@@ -148,6 +148,7 @@ namespace drawStrings {
     //% blockId=drawstring_write
     //% block="write %text on image %img=screen_image_picker at x %x y %y with color %color=colorindexpicker in font %font"
     //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15
+    //% hidden
     export function write(text: string, img: Image,
         x: number, y: number, color: color, fi: FontInfo)
         : void {
@@ -163,6 +164,7 @@ namespace drawStrings {
     //% blockId=drawstring_write_center
     //% block="write %text centered on image %img=screen_image_picker at y %y with color %color=colorindexpicker in font %font"
     //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1
+    //% hidden
     export function writeCenter(text: string, img: Image,
         y: number, color: color, fi: FontInfo): void {
         if (!fi) {

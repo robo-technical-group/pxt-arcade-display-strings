@@ -21,6 +21,8 @@ let fonts: FontName[] = [
     FontName.Font8,
     FontName.Font8];
 
+// drawStrings.write() demo
+// Not needed for JavaScript, as image.print() is available
 for (let size: number = 1; size <= 4; size++) {
     background = image.create(scene.screenWidth(), scene.screenHeight());
     let y: number = 0;
@@ -33,6 +35,8 @@ for (let size: number = 1; size <= 4; size++) {
     loops.pause(pauseTime);
 }   // for ( size )
 
+// drawStrings.writeCenter() demo
+// Also not needed for JavaScript, as image.printCenter() is available
 for (let size: number = 1; size <= 4; size++) {
     background = image.create(scene.screenWidth(), scene.screenHeight());
     let y: number = 0;
