@@ -1,5 +1,7 @@
 # MakeCode Arcade Display Strings on Images
 
+[![Build Status](https://travis-ci.com/robo-technical-group/pxt-arcade-display-strings.svg?branch=master)](https://travis-ci.com/robo-technical-group/pxt-arcade-display-strings)
+
 Extension for displaying strings on an image.
 
 ## TODO
@@ -7,7 +9,7 @@ Extension for displaying strings on an image.
 - [X] See it in action at https://makecode.com/_ddw0PJdYbC3A
 - [ ] Add "icon.png" image (300x200) in the root folder
 - [X] Add "- beta" to the GitHub project description if you are still iterating it.
-- [ ] Turn on your automated build on https://travis-ci.org
+- [X] Turn on your automated build on https://travis-ci.org (v. 1.0.7)
 - [X] Use "pxt bump" to create a tagged release on GitHub
 - [ ] Get your package reviewed and approved https://arcade.makecode.com/packages/approval
 
