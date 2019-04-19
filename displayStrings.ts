@@ -122,7 +122,7 @@ namespace drawStrings {
      */
     //% blockId=drawstring_width
     //% block="width of %text in %font"
-    //% text.defl="Hello!"
+    //% text.defl="Hello!" fi.shadow="variables_get"
     export function width(text: string, fi: FontInfo): number {
         if (!fi) {
             fi = createFontInfo(DEFAULT_FONT);
@@ -135,6 +135,7 @@ namespace drawStrings {
      */
     //% blockId=drawstring_height
     //% block="height of font %font"
+    //% fi.shadow="variables_get"
     export function height(fi: FontInfo): number {
         if (!fi) {
             fi = createFontInfo(DEFAULT_FONT);
@@ -147,7 +148,7 @@ namespace drawStrings {
      */
     //% blockId=drawstring_write
     //% block="write %text on image %img=screen_image_picker at x %x y %y with color %color=colorindexpicker in font %font"
-    //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15
+    //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15 fi.shadow="variables_get"
     //% hidden
     export function write(text: string, img: Image,
         x: number, y: number, color: color, fi: FontInfo)
@@ -163,7 +164,7 @@ namespace drawStrings {
      */
     //% blockId=drawstring_write_center
     //% block="write %text centered on image %img=screen_image_picker at y %y with color %color=colorindexpicker in font %font"
-    //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1
+    //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 fi.shadow="variables_get"
     //% hidden
     export function writeCenter(text: string, img: Image,
         y: number, color: color, fi: FontInfo): void {
@@ -178,7 +179,7 @@ namespace drawStrings {
      */
     //% blockId=drawstring_write_multi
     //% block="write strings %text on image %img=screen_image_picker at x %x y %y with color %color=colorindexpicker in font %font || with spacing %spacing"
-    //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1
+    //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1 fi.shadow="variables_get"
     export function writeMultiple(text: string[], img: Image,
         x: number, y: number, color: color, fi: FontInfo,
         spacing: number = 1)
@@ -199,7 +200,7 @@ namespace drawStrings {
      */
     //% blockId=drawstring_write_multi_center
     //% block="write strings %text centered on image %img=screen_image_picker at y %y with color %color=colorindexpicker in font %font || with spacing %spacing"
-    //% text.defl="Hello!" y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1
+    //% text.defl="Hello!" y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1 fi.shadow="variables_get"
     export function writeMultipleCenter(text: string[], img: Image,
         y: number, color: color, fi: FontInfo,
         spacing: number = 1)
