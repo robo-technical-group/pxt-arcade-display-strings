@@ -179,7 +179,7 @@ namespace drawStrings {
      */
     //% blockId=drawstring_write_multi
     //% block="write strings %text on image %img=screen_image_picker at x %x y %y with color %color=colorindexpicker in font %fi || with spacing %spacing"
-    //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1 fi.shadow="variables_get"
+    //% text.shadow="variables_get" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1 fi.shadow="variables_get"
     export function writeMultiple(text: string[], img: Image,
         x: number, y: number, color: color, fi: FontInfo,
         spacing: number = 1)
@@ -200,7 +200,7 @@ namespace drawStrings {
      */
     //% blockId=drawstring_write_multi_center
     //% block="write strings %text centered on image %img=screen_image_picker at y %y with color %color=colorindexpicker in font %fi || with spacing %spacing"
-    //% text.defl="Hello!" y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1 fi.shadow="variables_get"
+    //% text.shadow="variables_get" y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1 fi.shadow="variables_get"
     export function writeMultipleCenter(text: string[], img: Image,
         y: number, color: color, fi: FontInfo,
         spacing: number = 1)
