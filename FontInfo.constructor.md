@@ -1,9 +1,12 @@
 # FontInfo.constructor
 
-Default constructor for the FontInfo class.
+Default constructor for the `FontInfo` class.
 
-`constructor(font: FontName, size: number)`
+```typescript
+constructor(font: FontName, size: number)
+```
 
-`font: FontName` FontName of font to use. Possible values: `FontName.Font5` and `FontName.Font8`.
+## Parameters
 
-`size: number` Multiplier for font. For example, to use a double-sized font, set `size` to 2.
+- `font: FontName` [`FontName`](FontName.md) of font to use.
+- `size: number` Multiplier for font. For example, to use a double-sized font, set `size` to 2.

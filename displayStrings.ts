@@ -194,7 +194,7 @@ namespace drawStrings {
      * @param {Image} img - Drawing canvas.
      * @param {number} x - Horizontal coordinate for top-left of string.
      * @param {number} y - Vertical coordinate for top-left of string.
-     * @param {color} color - Color to use when drawing text.
+     * @param {number} color - Color to use when drawing text.
      * @param {FontInfo} fi - Font to use.
      */
     //% blockId=drawstring_write
@@ -202,7 +202,7 @@ namespace drawStrings {
     //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15 fi.shadow="variables_get"
     //% hidden
     export function write(text: string, img: Image,
-        x: number, y: number, color: color, fi: FontInfo)
+        x: number, y: number, color: number, fi: FontInfo)
         : void {
         if (!fi) {
             fi = createFontInfo(DEFAULT_FONT)
@@ -215,7 +215,7 @@ namespace drawStrings {
      * @param {string} text - String to draw.
      * @param {Image} img - Drawing canvas.
      * @param {number} y - Vertical coordinate for top of string.
-     * @param {color} color - Color to use when drawing text.
+     * @param {number} color - Color to use when drawing text.
      * @param {FontInfo} fi - Font to use.
      */
     //% blockId=drawstring_write_center
@@ -223,7 +223,7 @@ namespace drawStrings {
     //% text.defl="Hello!" x.defl=0 y.defl=0 color.defl=1 fi.shadow="variables_get"
     //% hidden
     export function writeCenter(text: string, img: Image,
-        y: number, color: color, fi: FontInfo): void {
+        y: number, color: number, fi: FontInfo): void {
         if (!fi) {
             fi = createFontInfo(DEFAULT_FONT)
         }   // if (!fi)
@@ -236,7 +236,7 @@ namespace drawStrings {
      * @param {Image} img - Drawing canvas.
      * @param {number} x - Horizontal coordinate for top-left of first string.
      * @param {number} y - Vertical coordinate for top-left of first string.
-     * @param {color} color - Color to use when drawing text.
+     * @param {number} color - Color to use when drawing text.
      * @param {FontInfo} fi - Font to use.
      * @param {number} spacing - Number of pixels to skip between strings.
      */
@@ -244,7 +244,7 @@ namespace drawStrings {
     //% block="write strings %text on image %img=screen_image_picker at x %x y %y with color %color=colorindexpicker in font %fi || with spacing %spacing"
     //% text.shadow="variables_get" x.defl=0 y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1 fi.shadow="variables_get"
     export function writeMultiple(text: string[], img: Image,
-        x: number, y: number, color: color, fi: FontInfo,
+        x: number, y: number, color: number, fi: FontInfo,
         spacing: number = 1)
         : void {
         if (!fi) {
@@ -263,7 +263,7 @@ namespace drawStrings {
      * @param {string[]} text - Strings to draw.
      * @param {Image} img - Drawing canvas.
      * @param {number} y - Vertical coordinate for top of first string.
-     * @param {color} color - Color to use when drawing text.
+     * @param {number} color - Color to use when drawing text.
      * @param {FontInfo} fi - Font to use.
      * @param {number} spacing - Number of pixels to skip between strings.
      */
@@ -271,7 +271,7 @@ namespace drawStrings {
     //% block="write strings %text centered on image %img=screen_image_picker at y %y with color %color=colorindexpicker in font %fi || with spacing %spacing"
     //% text.shadow="variables_get" y.defl=0 color.defl=1 color.min=0 color.max=15 spacing.defl=1 fi.shadow="variables_get"
     export function writeMultipleCenter(text: string[], img: Image,
-        y: number, color: color, fi: FontInfo,
+        y: number, color: number, fi: FontInfo,
         spacing: number = 1)
         : void {
         if (!fi) {
@@ -292,7 +292,7 @@ namespace drawStrings {
      * @param {number} x1 - Horizontal coordinate of top-left of bounding box.
      * @param {number} y1 - Vertical coordinate of top-left of bounding box.
      * @param {number} x2 - Horizontal coordinate of bottom-right of bounding box.
-     * @param {number} y2 - Horizontal coordinate of bottom-right of bounding box.
+     * @param {number} y2 - Vertical coordinate of bottom-right of bounding box.
      * @param {TextAlignment} align - Alignment of text within bounding box.
      * @param {number} color - Color to use when drawing.
      * @param {FontInfo} fi - Font to use.
