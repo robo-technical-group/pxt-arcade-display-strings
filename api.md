@@ -1,4 +1,4 @@
-# Display Strings API
+# MakeCode Arcade Display Strings API
 
 ## Enumerations
 
