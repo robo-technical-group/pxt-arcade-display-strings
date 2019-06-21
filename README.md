@@ -4,6 +4,8 @@
 
 Extension for displaying strings on an image with Blocks interface.
 
+[Link to API documentation](https://github.com/robo-technical-group/pxt-arcade-display-strings/blob/master/api.md)
+
 ## TODO
 
 - [X] See it in action at https://makecode.com/_ddw0PJdYbC3A
