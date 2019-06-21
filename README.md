@@ -12,6 +12,7 @@ Extension for displaying strings on an image.
 - [X] Turn on your automated build on https://travis-ci.org (v. 1.0.7)
 - [X] Use "pxt bump" to create a tagged release on GitHub
 - [ ] Get your package reviewed and approved https://arcade.makecode.com/packages/approval
+- [X] Add `writeWrapped` (Done - version 1.0.11).
 
 Visit the following links to read more about building MakeCode custom blocks and extensions:
 - https://arcade.makecode.com/blocks/custom
